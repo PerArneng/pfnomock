@@ -12,6 +12,7 @@ public class TransferServiceV1 implements TransferService {
     public void transfer(Transfer transfer) {
 
         Account fromAccount = this.accountRepository.getAccountById(transfer.getFromAccountId());
+        Account toAccount = this.accountRepository.getAccountById(transfer.getToAccountId());
 
 
     }
