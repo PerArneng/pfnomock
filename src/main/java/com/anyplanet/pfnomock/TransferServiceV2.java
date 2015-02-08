@@ -20,7 +20,8 @@ public class TransferServiceV2 implements TransferService {
 
     }
 
-    protected static Account[] makeTransfer(Account fromAccount, Account toAccount, int amount) {
+    protected static Account[] makeTransfer(final Account fromAccount,
+                                            final Account toAccount, int amount) {
 
         if (amount < 1) {
             throw new BankException("transfer amount of less than 1 is not valid");

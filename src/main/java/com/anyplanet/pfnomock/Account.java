@@ -4,7 +4,7 @@ package com.anyplanet.pfnomock;
 public class Account {
 
     private final int id;
-    private final int amount;
+    private int amount;
 
     public Account(int id, int amount) {
         this.id = id;
@@ -17,5 +17,9 @@ public class Account {
 
     public int getAmount() {
         return amount;
+    }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
     }
 }
